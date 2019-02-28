@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="小智的文档">
+<meta name="keywords" content="Android,Ios,Java,PHP,人生">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小智的文档">
+<meta property="og:url" content="http://blog.yesdo.xyz/2019/02/28/流程图/index.html">
+<meta property="og:site_name" content="supo">
+<meta property="og:description" content="小智的文档">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-28T07:27:06.740Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="小智的文档">
+<meta name="twitter:description" content="小智的文档">
+
+
+
+
+
+
+  <link rel="canonical" href="http://blog.yesdo.xyz/2019/02/28/流程图/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>小智的文档 | supo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">supo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">自强不息，厚德载物</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.yesdo.xyz/2019/02/28/流程图/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="supozheng">
+      <meta itemprop="description" content="生活本就不易<br>不必苛求别人的理解和认同<br>安静的，过自己的生活就好<br>心若不动，风又奈何<br>你若不伤，岁月无恙">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="supo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">小智的文档
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-02-28 15:25:00 / Modified: 15:27:06" itemprop="dateCreated datePublished" datetime="2019-02-28T15:25:00+08:00">2019-02-28</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+              <div class="post-description">小智的文档</div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>[TOC]</p>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>修订人</th>
+<th>修订内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>2019-02-25</td>
+<td>谭晓智</td>
+<td>定稿</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-系统说明"><a href="#1-系统说明" class="headerlink" title="1 系统说明"></a>1 系统说明</h1><p><code>3K用户中心</code>(以下简称<code>UDB</code>) 是专为业务中心提供用户相关服务的技术组件，3K各业务系统可通过本组件实现统一登录及用户关系绑定。<br>注意：组件遵循<code>OAuth2.0协议</code>标准，开发者在接入之前建议先了解此协议流程。  </p>
+<h1 id="2-开始开发"><a href="#2-开始开发" class="headerlink" title="2 开始开发"></a>2 开始开发</h1><h2 id="2-1-接入概述"><a href="#2-1-接入概述" class="headerlink" title="2.1 接入概述"></a>2.1 接入概述</h2><p>接入UDB，业务系统开发人员需要完成以下步骤：</p>
+<ul>
+<li>UDB已正确添加IP白名单</li>
+<li>UDB已正确配置回调域名白名单</li>
+<li>选择适用的授权模式，依据文档实现业务逻辑</li>
+</ul>
+<h2 id="2-2-名词解释"><a href="#2-2-名词解释" class="headerlink" title="2.2 名词解释"></a>2.2 名词解释</h2><h2 id="2-3-返回值说明"><a href="#2-3-返回值说明" class="headerlink" title="2.3 返回值说明"></a>2.3 返回值说明</h2><h1 id="3-授权接入"><a href="#3-授权接入" class="headerlink" title="3 授权接入"></a>3 授权接入</h1><h2 id="3-1-获取api-token"><a href="#3-1-获取api-token" class="headerlink" title="3.1 获取api_token"></a>3.1 获取api_token</h2><blockquote>
+<p>api_token是各业务系统全局唯一的接口调用凭证，业务系统在调用UDB各接口时都需要使用api_token，需要妥善保存。api_token有效期为2小时，需定时刷新，重复获取将导致上次获取的api_token失效。  </p>
+</blockquote>
+<p><strong>api_token生成及使用说明</strong>  </p>
+<ul>
+<li>建议各业务平台使用中央服务器统一获取和刷新api_token，其它业务逻辑服务器所使用的api_token均来自于该中央服务器，不应该各自去刷新，否则容易造成冲突导致api_token覆盖而影响业务；</li>
+<li>目前api_token的有效期通过返回的expire_in来传递，<code>有效期为7200秒</code>。中央服务器需要根据此参数来刷新api_token。在刷新过程中仍可对外继续输出旧api_token，<code>UDB会保证在5分钟内保持新旧api_token都可用</code>。</li>
+</ul>
+<p>业务系统可根据UDB分配的<code>client_id</code>和<code>secret</code>来获取<code>api_token</code></p>
+<p>注意，因该API对安全性要求较高，在调用之前业务系统应将服务器IP配置到UDB以便放开白名单</p>
+<p>调用方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https请求 GET</span><br><span class="line">https://passport.3k.com/api/token?client_id=CLIENT_ID&amp;secret=SECRET</span><br></pre></td></tr></table></figure>
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client_id</td>
+<td>是</td>
+<td>UDB分配的业务ID</td>
+</tr>
+<tr>
+<td>secret</td>
+<td>是</td>
+<td>UDB分配的业务密钥</td>
+</tr>
+</tbody>
+</table>
+<p>返回</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"api_token"</span>:<span class="string">"API_TOKEN"</span>,</span><br><span class="line">    <span class="attr">"expires_in"</span>:<span class="number">7200</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>接口调用错误时，会返回<code>errcode</code>和<code>errmsg</code>字段，以JSON格式返回，具体参见返回码说明章节。</p>
+<h2 id="3-2-授权码模式"><a href="#3-2-授权码模式" class="headerlink" title="3.2 授权码模式"></a>3.2 授权码模式</h2><h3 id="3-2-1-业务说明"><a href="#3-2-1-业务说明" class="headerlink" title="3.2.1 业务说明"></a>3.2.1 业务说明</h3><p>业务系统可以通过3K用户网页授权机制来获取用户基本资源，进而实现业务逻辑；</p>
+<p><strong>关于网页授权回调域名说明</strong><br>目前UDB系统暂不对3K体系外的业务系统使用，为提高安全性，在请求3K用户网页授权之前，业务系统需要将回调域名配置到UDB系统内，开发者中心在上线之前可将域名提供给相应开发人员进行配置。  </p>
+<h3 id="3-2-2-业务流程"><a href="#3-2-2-业务流程" class="headerlink" title="3.2.2 业务流程"></a>3.2.2 业务流程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">业务系统-&gt;UDB:1.302跳转并携带回调URL登录授权页</span><br><span class="line">UDB-&gt;用户:2.显示授权页面</span><br><span class="line">用户--&gt;用户:3.用户选择是否允许授权</span><br><span class="line">Note over 用户:用户如果不授权，将结果返回回调URL</span><br><span class="line">用户-&gt;UDB:4.同意授权</span><br><span class="line">UDB--&gt;UDB:5.创建AuthorizationCode授权码</span><br><span class="line">UDB-&gt;业务系统:6.携带授权码302跳转回调URL</span><br><span class="line">业务系统--&gt;业务系统:检查授权码传递状态</span><br><span class="line">业务系统-&gt;UDB:7.使用授权码获取用户AccessToken</span><br><span class="line">UDB--&gt;UDB:8.检查授权码状态并创建AccessToken令牌</span><br><span class="line">UDB-&gt;业务系统:9.给出资源令牌</span><br><span class="line">Note over 业务系统:完成整体授权流程，存储令牌</span><br><span class="line">业务系统-&gt;UDB:10.使用令牌获取用户信息</span><br><span class="line">UDB-&gt;业务系统:11.返回当前用户资源</span><br></pre></td></tr></table></figure>
+<p>如图所示，授权码模式是OAuth2.0协议中最全也是最标准的模式，总共分为4步：  </p>
+<ul>
+<li>第一步：跳转至授权页，用户选择是否登录或是否同意授权</li>
+<li>第二步：授权完成后，业务系统获取到一次性授权码</li>
+<li>第三步：使用授权码获取AccessToken令牌</li>
+<li>第四步：使用令牌获取用户资源</li>
+</ul>
+<h3 id="3-2-3-唤起授权页"><a href="#3-2-3-唤起授权页" class="headerlink" title="3.2.3 唤起授权页"></a>3.2.3 唤起授权页</h3><blockquote>
+<p>在请求拉取授权页之前，UDB系统会对回调域名作强校验处理，请先确保redirect_uri参数所在域名已在UDB中配置！</p>
+</blockquote>
+<p>注意：scope参数默认为userbase，为保证业务严谨性，此参数不建议留空！  </p>
+<p><strong>调用方式</strong></p>
+<p>使用302跳转将用户引导至以下链接打开授权页：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https请求 GET</span><br><span class="line">https://passport.3k.com/oauth2/authorize?client_id=CLIENT_ID&amp;redirect_uri=REDIRECT_URI&amp;scope=SCOPE&amp;state=STATE&amp;grant_type=authorization_code</span><br></pre></td></tr></table></figure></p>
+<p>页面打开后，如果用户当前已使用3K账号登录过UDB系统，此时页面会展示授权页，如果未登录，则加载3K用户登录界面引导用户登录。</p>
+<p><strong>参数说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client_id</td>
+<td>是</td>
+<td>业务系统唯一标识</td>
+</tr>
+<tr>
+<td>redirect_uri</td>
+<td>是</td>
+<td>授权后重定向的回调链接地址， 请使用 urlEncode 对链接进行处理</td>
+</tr>
+<tr>
+<td>scope</td>
+<td>否</td>
+<td>应用授权作用域<br>userbase：不弹出授权页面，直接跳转，只能获取通行证ID<br>userinfo：弹出授权页，可通过通行证ID获取详细用户资源</td>
+</tr>
+<tr>
+<td>state</td>
+<td>是</td>
+<td>用于保持请求和回调的状态，在回调时将回传该参数。<br>这个参数可用于防止跨站请求伪造（CSRF）攻击</td>
+</tr>
+<tr>
+<td>grant_type</td>
+<td>是</td>
+<td>授权类型，此处填写<code>authorization_code</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>回调返回</strong>  </p>
+<p>如果用户同意授权，UDB会将授权码跳转至<code>redirect_uri?code=CODE&amp;state=STATE</code></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>授权码可用来换取用户登录access_token，为一次性<br>用户每次授权或业务系统每次使用code后将自动销毁，如未使用则5分钟后自动销毁。</td>
+</tr>
+<tr>
+<td>state</td>
+<td>透传参数，原值返回</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-2-4-换取令牌"><a href="#3-2-4-换取令牌" class="headerlink" title="3.2.4 换取令牌"></a>3.2.4 换取令牌</h3><blockquote>
+<p>该种方式适用于授权码模式，用户在授权完成后，认证服务器会将授权码回调给业务系统服务器，由业务系统使用授权码换取令牌</p>
+</blockquote>
+<p>注意，由于涉及业务系统<code>client_id</code>及<code>secret</code>，本接口必须在业务系统后端请求且必须存储在后端服务器，禁止传给客户端，后续刷新令牌、通过令牌获取用户、令牌回收等步骤也必须交由后端服务器执行。</p>
+<p>调用方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https GET</span><br><span class="line">https://passport.3k.com/oauth2/access_token?client_id=CLIENT_ID&amp;secret=SECRET&amp;code=CODE&amp;grant_type=authorization_code&amp;auth_callback=AUTH_STATE</span><br></pre></td></tr></table></figure>
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client_id</td>
+<td>是</td>
+<td>业务系统唯一标识</td>
+</tr>
+<tr>
+<td>secret</td>
+<td>是</td>
+<td>业务系统标识密钥</td>
+</tr>
+<tr>
+<td>code</td>
+<td>是</td>
+<td>授权码模式获取的Authorization Code</td>
+</tr>
+<tr>
+<td>grant_type</td>
+<td>是</td>
+<td>授权类型，此处填写<code>authorization_code</code></td>
+</tr>
+<tr>
+<td>auth_state</td>
+<td>否</td>
+<td>授权透传参数，获取资源时原值返回</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回值</strong>  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"access_token"</span>:<span class="string">"ACCESS_TOKEN"</span>,</span><br><span class="line">    <span class="attr">"expires_in"</span>:<span class="number">7200</span>,</span><br><span class="line">    <span class="attr">"refresh_token"</span>:<span class="string">"REFRESH_TOKEN"</span>,</span><br><span class="line">    <span class="attr">"scope"</span>:<span class="string">"SCOPE"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>返回说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>资源令牌，用户资源获取凭证</td>
+</tr>
+<tr>
+<td>expires_in</td>
+<td>令牌剩余有效期（秒）</td>
+</tr>
+<tr>
+<td>refresh_token</td>
+<td>刷新凭证，用于刷新资源令牌，不限时间</td>
+</tr>
+<tr>
+<td>scope</td>
+<td>授权资源获取范围，唤起授权页时传递</td>
+</tr>
+</tbody>
+</table>
+<p>接口调用错误时，会返回<code>errcode</code>和<code>errmsg</code>字段，以JSON格式返回，具体参见返回码说明章节。</p>
+<h2 id="3-3-密码模式"><a href="#3-3-密码模式" class="headerlink" title="3.3 密码模式"></a>3.3 密码模式</h2><h3 id="3-3-1-业务说明"><a href="#3-3-1-业务说明" class="headerlink" title="3.3.1 业务说明"></a>3.3.1 业务说明</h3><blockquote>
+<p>密码模式为OAuth2.0协议中的其中一个标准协议，UDB将密码交由业务系统托管，由业务系统负责收集与通讯，因涉及开放性密码传输，所以必须需要保证使用的业务系统高度可信！  </p>
+</blockquote>
+<p>注意：该模式通常应用于内部系统，绝对禁止对外部系统及第三方开放！  </p>
+<h3 id="3-3-2-业务流程"><a href="#3-3-2-业务流程" class="headerlink" title="3.3.2 业务流程"></a>3.3.2 业务流程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">用户-&gt;业务系统:1.传递用户名、账号等相关信息</span><br><span class="line">业务系统-&gt;UDB:2.传递账号、密码、唯一标识等参数</span><br><span class="line">UDB--&gt;UDB:3.校验登录权限</span><br><span class="line">Note over UDB:如果校验不成功此处返回失败</span><br><span class="line">UDB-&gt;业务系统:4.返回AccessToken令牌</span><br><span class="line">业务系统--&gt;业务系统:5.校验并存储令牌</span><br><span class="line">业务系统-&gt;用户:6.响应登录业务逻辑</span><br><span class="line">Note over 业务系统:完成登录流程</span><br><span class="line">业务系统-&gt;UDB:通过令牌获取用户资源</span><br></pre></td></tr></table></figure>
+<p>如图所示，密码模式为OAuth2.0协议中最为直观及最简单但安全度要求最高的方式，可以直接理解为UDB向业务系统提供了一个登录API，业务系统直接通过API通知及校验UDB登录，此种模式相比较网页授权模式区别在于业务系统需要自己定制一个用户登录视图，而网页授权模式中的授权页及登录页均由UDB提供。</p>
+<p>注意！！！此种模式要求业务系统绝对高度可信！  </p>
+<h3 id="3-3-3-调用方法"><a href="#3-3-3-调用方法" class="headerlink" title="3.3.3 调用方法"></a>3.3.3 调用方法</h3><p>业务系统首先需要有自己的账号登录界面，通过登录页获取用户输入的用户名和密码，通过一系列业务系统业务逻辑处理之后，调用以下API进行UDB认证：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https POST</span><br><span class="line">https://passport.3k.com/oauth2/authorize?client_id=CLIENT&amp;secret=SECRET&amp;grant_type=password&amp;scope=userbase</span><br></pre></td></tr></table></figure>
+<p>POST参数</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"username"</span>:<span class="string">"USERNAME"</span>,</span><br><span class="line">    <span class="attr">"password"</span>:<span class="string">"PASSWORD"</span>,</span><br><span class="line">    <span class="attr">"auth_state"</span>:<span class="string">"AUTH_STATE"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client_id</td>
+<td>是</td>
+<td>业务系统唯一标识</td>
+</tr>
+<tr>
+<td>secret</td>
+<td>是</td>
+<td>业务系统标识密钥</td>
+</tr>
+<tr>
+<td>grant_type</td>
+<td>是</td>
+<td>授权类型，此处填写<code>password</code></td>
+</tr>
+<tr>
+<td>scope</td>
+<td>否</td>
+<td>授权资源获取作用域</td>
+</tr>
+<tr>
+<td>username</td>
+<td>是</td>
+<td>用户登录账号</td>
+</tr>
+<tr>
+<td>password</td>
+<td>是</td>
+<td>登录密码</td>
+</tr>
+<tr>
+<td>auth_state</td>
+<td>否</td>
+<td>授权透传参数，获取资源时原值返回</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回值</strong>  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"access_token"</span>:<span class="string">"ACCESS_TOKEN"</span>,</span><br><span class="line">    <span class="attr">"expires_in"</span>:<span class="number">7200</span>,</span><br><span class="line">    <span class="attr">"refresh_token"</span>:<span class="string">"REFRESH_TOKEN"</span>,</span><br><span class="line">    <span class="attr">"scope"</span>:<span class="string">"SCOPE"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>返回说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>资源令牌，用户资源获取凭证</td>
+</tr>
+<tr>
+<td>expires_in</td>
+<td>令牌剩余有效期（秒）</td>
+</tr>
+<tr>
+<td>refresh_token</td>
+<td>刷新凭证，用于刷新资源令牌，不限时间</td>
+</tr>
+<tr>
+<td>scope</td>
+<td>授权资源获取作用域</td>
+</tr>
+</tbody>
+</table>
+<p>接口调用错误时，会返回<code>errcode</code>和<code>errmsg</code>字段，以JSON格式返回，具体参见返回码说明章节。  </p>
+<h2 id="3-4-快速授权模式"><a href="#3-4-快速授权模式" class="headerlink" title="3.4 快速授权模式"></a>3.4 快速授权模式</h2><h3 id="3-4-1-业务说明"><a href="#3-4-1-业务说明" class="headerlink" title="3.4.1 业务说明"></a>3.4.1 业务说明</h3><blockquote>
+<p>此模式作为密码授权模式的延伸，该模式允许业务系统使用自身的用户唯一标识让用户快速在UDB系统内授权登录，适用于有自己用户唯一标识的业务系统。</p>
+</blockquote>
+<p>注意：该模式通常应用于内部系统，绝对禁止对外部系统及第三方开放！  </p>
+<h3 id="3-4-2-业务流程"><a href="#3-4-2-业务流程" class="headerlink" title="3.4.2 业务流程"></a>3.4.2 业务流程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">用户-&gt;业务系统:1.执行登录</span><br><span class="line">业务系统--&gt;业务系统:产生业务系统用户唯一标识</span><br><span class="line">业务系统-&gt;UDB:2.传递用户唯一标识等参数</span><br><span class="line">UDB--&gt;UDB:3.校验用户是否已存在</span><br><span class="line">Note over UDB:如果不存在，则自动调用注册服务</span><br><span class="line">UDB-&gt;业务系统:4.返回AccessToken令牌</span><br><span class="line">业务系统--&gt;业务系统:5.校验并存储令牌</span><br><span class="line">业务系统-&gt;用户:6.响应登录业务逻辑</span><br><span class="line">Note over 业务系统:完成登录流程</span><br><span class="line">业务系统-&gt;UDB:通过令牌获取用户资源</span><br></pre></td></tr></table></figure>
+<p>如图所示，快速授权模式为UDB专为业务系统提供的唯一标识快速授权的非OAuth2.0标准模式，业务系统在产生自身用户唯一标识后，允许通过此模式向UDB进行授权（用户无感知），通过UDB认证后直接调取登录服务后返回登录令牌（如果业务系统用户唯一标识在UDB内不存在，则自动调用注册服务优先创建用户）</p>
+<p>注意！！！此种模式要求业务系统绝对高度可信！  </p>
+<h3 id="3-4-3-调用方法"><a href="#3-4-3-调用方法" class="headerlink" title="3.4.3 调用方法"></a>3.4.3 调用方法</h3><p>业务系统首先需要在自身系统内实现用户唯一标识</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https POST</span><br><span class="line">https://passport.3k.com/oauth2/authorize?client_id=CLIENT&amp;secret=SECRET&amp;grant_type=unique&amp;scope=userbase</span><br></pre></td></tr></table></figure>
+<p>POST参数  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"unique_id"</span>:<span class="string">"UNIQUE_ID"</span>,</span><br><span class="line">    <span class="attr">"auth_state"</span>:<span class="string">"AUTH_STATE"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client_id</td>
+<td>是</td>
+<td>业务系统唯一标识</td>
+</tr>
+<tr>
+<td>secret</td>
+<td>是</td>
+<td>业务系统标识密钥</td>
+</tr>
+<tr>
+<td>grant_type</td>
+<td>是</td>
+<td>授权类型，此处填写<code>unique</code></td>
+</tr>
+<tr>
+<td>scope</td>
+<td>是</td>
+<td>授权资源获取作用域</td>
+</tr>
+<tr>
+<td>auth_state</td>
+<td>否</td>
+<td>授权透传参数，获取资源时原值返回</td>
+</tr>
+<tr>
+<td>unique_id</td>
+<td>是</td>
+<td>业务系统用户唯一标识</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回值</strong>  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"access_token"</span>:<span class="string">"ACCESS_TOKEN"</span>,</span><br><span class="line">    <span class="attr">"expires_in"</span>:<span class="number">7200</span>,</span><br><span class="line">    <span class="attr">"refresh_token"</span>:<span class="string">"REFRESH_TOKEN"</span>,</span><br><span class="line">    <span class="attr">"scope"</span>:<span class="string">"SCOPE"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>返回说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>资源令牌，用户资源获取凭证</td>
+</tr>
+<tr>
+<td>expires_in</td>
+<td>令牌剩余有效期（秒）</td>
+</tr>
+<tr>
+<td>refresh_token</td>
+<td>刷新凭证，用于刷新资源令牌，不限时间</td>
+</tr>
+<tr>
+<td>scope</td>
+<td>授权资源获取作用域</td>
+</tr>
+</tbody>
+</table>
+<p>接口调用错误时，会返回<code>errcode</code>和<code>errmsg</code>字段，以JSON格式返回，具体参见返回码说明章节。  </p>
+<h2 id="3-5-令牌更新"><a href="#3-5-令牌更新" class="headerlink" title="3.5 令牌更新"></a>3.5 令牌更新</h2><blockquote>
+<p>由于access_token令牌有效期较短，目前支持7200秒存活，业务系统如果需要实现登录状态过期后用户无感知自动续登，可以使用refresh_token进行刷新，refresh_token有效期为30天，刷新后能重新获取一个新的access_token。</p>
+</blockquote>
+<p>调用方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https GET</span><br><span class="line">https://passport.3k.com/oauth2/refresh_token?client_id=CLIENT_ID&amp;grant_type=refresh_token&amp;refresh_token=REFRESH_TOKEN</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client_id</td>
+<td>是</td>
+<td>业务系统唯一标识</td>
+</tr>
+<tr>
+<td>grant_type</td>
+<td>是</td>
+<td>授权类型，此处填写<code>refresh_token</code></td>
+</tr>
+<tr>
+<td>refresh_token</td>
+<td>是</td>
+<td>填写通过access_token获取到的refresh_token参数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回值</strong>  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"access_token"</span>:<span class="string">"ACCESS_TOKEN"</span>,</span><br><span class="line">    <span class="attr">"expires_in"</span>:<span class="number">7200</span>,</span><br><span class="line">    <span class="attr">"refresh_token"</span>:<span class="string">"REFRESH_TOKEN"</span>,</span><br><span class="line">    <span class="attr">"scope"</span>:<span class="string">"SCOPE"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>返回说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>资源令牌，用户资源获取凭证</td>
+</tr>
+<tr>
+<td>expires_in</td>
+<td>令牌剩余有效期（秒）</td>
+</tr>
+<tr>
+<td>refresh_token</td>
+<td>刷新凭证，用于刷新资源令牌，不限时间</td>
+</tr>
+<tr>
+<td>scope</td>
+<td>授权资源获取作用域</td>
+</tr>
+</tbody>
+</table>
+<p>接口调用错误时，会返回<code>errcode</code>和<code>errmsg</code>字段，以JSON格式返回，具体参见返回码说明章节。  </p>
+<h2 id="3-6-令牌回收"><a href="#3-6-令牌回收" class="headerlink" title="3.6 令牌回收"></a>3.6 令牌回收</h2><blockquote>
+<p>在业务系统执行过程中，有时会涉及需要将用户登录状态销毁（例如退出登录），为保证高质量用户状态及服务器资源安全性，建议当用户有类似操作时业务系统及时通知UDB销毁登录状态。</p>
+</blockquote>
+<p>调用方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https GET</span><br><span class="line">https://passport.3k.com/oauth2/revoke_token?client_id=CLIENT_ID&amp;secret=SECRET&amp;grant_type=revoke_token&amp;access_token=ACCESS_TOKEN</span><br></pre></td></tr></table></figure>
+<p><strong>请求参数</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client_id</td>
+<td>是</td>
+<td>业务系统唯一标识</td>
+</tr>
+<tr>
+<td>secret</td>
+<td>是</td>
+<td>业务系统标识密钥</td>
+</tr>
+<tr>
+<td>grant_type</td>
+<td>是</td>
+<td>授权类型，此处填写<code>revoke_token</code></td>
+</tr>
+<tr>
+<td>access_token</td>
+<td>是</td>
+<td>填写登录令牌</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回值</strong>  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"errcode"</span>:<span class="number">0</span>,</span><br><span class="line">    <span class="attr">"errmsg"</span>:<span class="string">"ok"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>接口调用错误时，会返回<code>errcode</code>和<code>errmsg</code>字段，以JSON格式返回，具体参见返回码说明章节。  </p>
+<p>注意！！！！销毁<code>access_token</code>令牌时会同时销毁所关联的<code>refresh_token</code>！</p>
+<h2 id="3-7-拉取授权资源"><a href="#3-7-拉取授权资源" class="headerlink" title="3.7 拉取授权资源"></a>3.7 拉取授权资源</h2><blockquote>
+<p>当业务系统正常执行完OAuth2.0协议流程并已获取到access_token登录令牌后，可通过此接口向UDB获取令牌相对应的用户资源。</p>
+</blockquote>
+<p>注意！返回的用户资源范围依靠access_token所关联的<code>scope</code>参数，不同的参数内容会返回不同的资源信息，具体参见<code>scope说明</code>章节。  </p>
+<p><strong>调用方式</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https GET</span><br><span class="line">https://passport.3k.com/oauth2/userinfo?access_token=ACCESS_TOKEN</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明</strong> </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>是</td>
+<td>需要获取的用户资源凭证</td>
+</tr>
+</tbody>
+</table>
+<p> <strong>返回值</strong>  </p>
+<p>scope值为<code>userbase</code>时</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"open_id"</span>:<span class="string">"OPEN_ID"</span>,</span><br><span class="line">    <span class="attr">"username"</span>:<span class="string">"USERNAME"</span>,</span><br><span class="line">    <span class="attr">"scope"</span>:<span class="string">"SCOPE"</span>,</span><br><span class="line">    <span class="attr">"unique_id"</span>:<span class="string">"UNIQUE_ID"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>scope值为<code>userinfo</code>时</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"open_id"</span>:<span class="string">"OPEN_ID"</span>,</span><br><span class="line">    <span class="attr">"username"</span>:<span class="string">"USERNAME"</span>,</span><br><span class="line">    <span class="attr">"scope"</span>:<span class="string">"SCOPE"</span>,</span><br><span class="line">    <span class="attr">"unique_id"</span>:<span class="string">"UNIQUE_ID"</span>,</span><br><span class="line">    <span class="attr">"auth_state"</span>:<span class="string">"AUTH_STATE"</span>,</span><br><span class="line">    <span class="attr">"name"</span>:<span class="string">"NAME"</span>,</span><br><span class="line">    <span class="attr">"nickname"</span>:<span class="string">"NICKNAME"</span>,</span><br><span class="line">    <span class="attr">"register_time"</span>:REGISTER_TIME,</span><br><span class="line">    <span class="attr">"register_ip"</span>:<span class="string">"REGISTER_IP"</span>,</span><br><span class="line">    <span class="attr">"avatar"</span>:<span class="string">"AVATAR"</span>,</span><br><span class="line">    <span class="attr">"sex"</span>:<span class="number">1</span>,</span><br><span class="line">    <span class="attr">"is_real_certify"</span>:IS_REAL_CERTIFY,</span><br><span class="line">    <span class="attr">"is_bind_email"</span>:IS_BIND_EMAIL,</span><br><span class="line">    <span class="attr">"is_bind_mobile"</span>:IS_BIND_MOBILE,</span><br><span class="line">    <span class="attr">"birthday"</span>:<span class="string">"BIRTHDAY"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>返回说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open_id</td>
+<td>通行证唯一标识</td>
+</tr>
+<tr>
+<td>username</td>
+<td>通行证登录账号</td>
+</tr>
+<tr>
+<td>scope</td>
+<td>授权资源获取作用域</td>
+</tr>
+<tr>
+<td>unique_id</td>
+<td>业务系统唯一标识</td>
+</tr>
+<tr>
+<td>auth_state</td>
+<td>授权透传参数，获取资源时原值返回</td>
+</tr>
+<tr>
+<td>name</td>
+<td>用户真实姓名</td>
+</tr>
+<tr>
+<td>nickname</td>
+<td>用户昵称</td>
+</tr>
+<tr>
+<td>register_time</td>
+<td>注册时间（10位时间戳）</td>
+</tr>
+<tr>
+<td>register_ip</td>
+<td>注册IP</td>
+</tr>
+<tr>
+<td>avatar</td>
+<td>用户头像网络链接</td>
+</tr>
+<tr>
+<td>sex</td>
+<td>用户性别，1男，0女，其它为未知</td>
+</tr>
+<tr>
+<td>is_real_certify</td>
+<td>是否实名制，1是，其余为否</td>
+</tr>
+<tr>
+<td>is_bind_email</td>
+<td>是否绑定邮箱，1是，其余为否</td>
+</tr>
+<tr>
+<td>is_bind_mobile</td>
+<td>是否绑定手机，1是，其余为否</td>
+</tr>
+<tr>
+<td>birthday</td>
+<td>生日（日期）</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-安全类设置"><a href="#4-安全类设置" class="headerlink" title="4 安全类设置"></a>4 安全类设置</h1><h2 id="4-1-绑定-解绑手机"><a href="#4-1-绑定-解绑手机" class="headerlink" title="4.1 绑定/解绑手机"></a>4.1 绑定/解绑手机</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">用户-&gt;业务系统:1.输入绑定/解绑信息</span><br><span class="line">业务系统-&gt;UDB:2.请求绑定/解绑</span><br><span class="line">UDB--&gt;UDB SERVER:发送验证信息</span><br><span class="line">note right of UDB SERVER:解绑时发至旧手机，绑定时发新手机</span><br><span class="line">UDB-&gt;业务系统:3.发送状态</span><br><span class="line">Note over 用户,业务系统:提示用户验证码短信</span><br><span class="line">用户-&gt;业务系统:4.输入验证码</span><br><span class="line">业务系统--&gt;UDB:5.携带验证码请求绑定/解绑手机</span><br><span class="line">UDB-&gt;业务系统:6.绑定状态</span><br></pre></td></tr></table></figure>
+<p>如图所示，绑定/解绑可拆分成两步：</p>
+<ul>
+<li>验证手机有效性（解绑时需验证旧手机）</li>
+<li>校验UDB向用户下发的短信验证码是否正确且执行相应业务</li>
+</ul>
+<h3 id="4-1-1-发送验证码"><a href="#4-1-1-发送验证码" class="headerlink" title="4.1.1 发送验证码"></a>4.1.1 发送验证码</h3><h3 id="4-1-2-验证码校验"><a href="#4-1-2-验证码校验" class="headerlink" title="4.1.2 验证码校验"></a>4.1.2 验证码校验</h3><h2 id="4-2-绑定-解绑邮箱"><a href="#4-2-绑定-解绑邮箱" class="headerlink" title="4.2 绑定/解绑邮箱"></a>4.2 绑定/解绑邮箱</h2><h2 id="4-3-密保设置"><a href="#4-3-密保设置" class="headerlink" title="4.3 密保设置"></a>4.3 密保设置</h2><h1 id="5-内部API"><a href="#5-内部API" class="headerlink" title="5 内部API"></a>5 内部API</h1><h2 id="5-1-接口说明"><a href="#5-1-接口说明" class="headerlink" title="5.1 接口说明"></a>5.1 接口说明</h2><p>本章节所有API均为内部系统API，涉及UDB核心数据，对所使用的业务系统要求绝对高度可信，禁止对外部开放！</p>
+<h2 id="5-2-通行证注册"><a href="#5-2-通行证注册" class="headerlink" title="5.2 通行证注册"></a>5.2 通行证注册</h2><p>该API适用于业务系统向UDB发起用户注册请求</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https POST</span><br><span class="line">https://apiudb.3k.com/access/create?api_token=API_TOKEN</span><br></pre></td></tr></table></figure>
+<p>POST参数  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"unique_id"</span>:<span class="string">"UNIQUE_ID"</span>,</span><br><span class="line">    <span class="attr">"username"</span>:<span class="string">"USERNAME"</span>,</span><br><span class="line">    <span class="attr">"password"</span>:<span class="string">"PASSWORD"</span>,</span><br><span class="line">    <span class="attr">"ip"</span>:<span class="string">"IP"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明</strong> </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unique_id</td>
+<td>否</td>
+<td>业务系统用户唯一标识，与<code>username</code>其中一个不为空</td>
+</tr>
+<tr>
+<td>username</td>
+<td>否</td>
+<td>通行证账号，与<code>unique_id</code>其中一个不为空，如果为空，则自动生成</td>
+</tr>
+<tr>
+<td>password</td>
+<td>否</td>
+<td>密码，如果为空，则自动生成</td>
+</tr>
+<tr>
+<td>ip</td>
+<td>是</td>
+<td>用户注册IP</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回值</strong>  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"errcode"</span>:<span class="number">0</span>,</span><br><span class="line">    <span class="attr">"errmsg"</span>:<span class="string">"ok"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>接口调用错误时，会返回<code>errcode</code>和<code>errmsg</code>字段，以JSON格式返回，具体参见返回码说明章节。  </p>
+<h2 id="5-3-设置用户资料"><a href="#5-3-设置用户资料" class="headerlink" title="5.3 设置用户资料"></a>5.3 设置用户资料</h2><p>该API适用于业务系统向UDB发起用户详细信息修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># https POST</span><br><span class="line">https://apiudb.3k.com/access/info?api_token=API_TOKEN</span><br></pre></td></tr></table></figure>
+<p>POST参数  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"open_id"</span>:<span class="string">"OPEN_ID"</span>,</span><br><span class="line">    <span class="attr">"name"</span>:<span class="string">"NAME"</span>,</span><br><span class="line">    <span class="attr">"nickname"</span>:<span class="string">"NICKNAME"</span>,</span><br><span class="line">    <span class="attr">"avatar"</span>:<span class="string">"AVATAR"</span>,</span><br><span class="line">    <span class="attr">"sex"</span>:<span class="number">1</span>,</span><br><span class="line">    <span class="attr">"birthday"</span>:<span class="string">"BIRTHDAY"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>返回说明</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open_id</td>
+<td>通行证唯一标识</td>
+</tr>
+<tr>
+<td>name</td>
+<td>用户真实姓名</td>
+</tr>
+<tr>
+<td>nickname</td>
+<td>用户昵称</td>
+</tr>
+<tr>
+<td>avatar</td>
+<td>用户头像网络链接</td>
+</tr>
+<tr>
+<td>sex</td>
+<td>用户性别，1男，0女，其它为未知</td>
+</tr>
+<tr>
+<td>birthday</td>
+<td>生日（日期）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回值</strong>  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"errcode"</span>:<span class="number">0</span>,</span><br><span class="line">    <span class="attr">"errmsg"</span>:<span class="string">"ok"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>接口调用错误时，会返回<code>errcode</code>和<code>errmsg</code>字段，以JSON格式返回，具体参见返回码说明章节。  </p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/27/Android面试题/" rel="next" title="Android面试题">
+                <i class="fa fa-chevron-left"></i> Android面试题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/header.jpg" alt="supozheng">
+            
+              <p class="site-author-name" itemprop="name">supozheng</p>
+              <p class="site-description motion-element" itemprop="description">生活本就不易<br>不必苛求别人的理解和认同<br>安静的，过自己的生活就好<br>心若不动，风又奈何<br>你若不伤，岁月无恙</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-系统说明"><span class="nav-number">1.</span> <span class="nav-text">1 系统说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-开始开发"><span class="nav-number">2.</span> <span class="nav-text">2 开始开发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-接入概述"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 接入概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-名词解释"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 名词解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-返回值说明"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 返回值说明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-授权接入"><span class="nav-number">3.</span> <span class="nav-text">3 授权接入</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-获取api-token"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 获取api_token</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-授权码模式"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 授权码模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-1-业务说明"><span class="nav-number">3.2.1.</span> <span class="nav-text">3.2.1 业务说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-2-业务流程"><span class="nav-number">3.2.2.</span> <span class="nav-text">3.2.2 业务流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-3-唤起授权页"><span class="nav-number">3.2.3.</span> <span class="nav-text">3.2.3 唤起授权页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-4-换取令牌"><span class="nav-number">3.2.4.</span> <span class="nav-text">3.2.4 换取令牌</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-密码模式"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 密码模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-1-业务说明"><span class="nav-number">3.3.1.</span> <span class="nav-text">3.3.1 业务说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-2-业务流程"><span class="nav-number">3.3.2.</span> <span class="nav-text">3.3.2 业务流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-3-调用方法"><span class="nav-number">3.3.3.</span> <span class="nav-text">3.3.3 调用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-快速授权模式"><span class="nav-number">3.4.</span> <span class="nav-text">3.4 快速授权模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-1-业务说明"><span class="nav-number">3.4.1.</span> <span class="nav-text">3.4.1 业务说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-2-业务流程"><span class="nav-number">3.4.2.</span> <span class="nav-text">3.4.2 业务流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-3-调用方法"><span class="nav-number">3.4.3.</span> <span class="nav-text">3.4.3 调用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-令牌更新"><span class="nav-number">3.5.</span> <span class="nav-text">3.5 令牌更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-令牌回收"><span class="nav-number">3.6.</span> <span class="nav-text">3.6 令牌回收</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7-拉取授权资源"><span class="nav-number">3.7.</span> <span class="nav-text">3.7 拉取授权资源</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-安全类设置"><span class="nav-number">4.</span> <span class="nav-text">4 安全类设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-绑定-解绑手机"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 绑定/解绑手机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-1-发送验证码"><span class="nav-number">4.1.1.</span> <span class="nav-text">4.1.1 发送验证码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-2-验证码校验"><span class="nav-number">4.1.2.</span> <span class="nav-text">4.1.2 验证码校验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-绑定-解绑邮箱"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 绑定/解绑邮箱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-密保设置"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 密保设置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-内部API"><span class="nav-number">5.</span> <span class="nav-text">5 内部API</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-接口说明"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 接口说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-通行证注册"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 通行证注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-设置用户资料"><span class="nav-number">5.3.</span> <span class="nav-text">5.3 设置用户资料</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">supozheng</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script src="/lib/three/canvas_sphere.min.js"></script>
+  
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.6.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
