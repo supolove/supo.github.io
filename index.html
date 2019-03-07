@@ -300,7 +300,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.yesdo.xyz/2019/02/28/流程图/">
+    <link itemprop="mainEntityOfPage" href="http://blog.yesdo.xyz/2019/03/07/sequence/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="supozheng">
@@ -320,7 +320,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/02/28/流程图/" class="post-title-link" itemprop="http://blog.yesdo.xyz/index.html">小智的文档</a>
+                <a href="/2019/03/07/sequence/" class="post-title-link" itemprop="http://blog.yesdo.xyz/index.html">sequence</a>
               
             
           </h1>
@@ -345,7 +345,7 @@
                 
               
 
-              <time title="Created: 2019-02-28 15:25:00 / Modified: 15:27:06" itemprop="dateCreated datePublished" datetime="2019-02-28T15:25:00+08:00">2019-02-28</time>
+              <time title="Created: 2019-03-07 19:50:15 / Modified: 19:56:16" itemprop="dateCreated datePublished" datetime="2019-03-07T19:50:15+08:00">2019-03-07</time>
             
 
             
@@ -384,16 +384,34 @@
 
       
         
-          小智的文档
-          <!--noindex-->
           
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/02/28/流程图/">
-                Read more &raquo;
-              </a>
-            </div>
+            <div id="sequence-0"></div>
+
+<p><div id="sequence-1"></div><script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">用户->游戏客户端:1.登录或者注册
+游戏客户端->星魂sdk客户端:2.登录或者注册
+星魂sdk客户端->星魂服务端:3.登录并注册
+星魂服务端->星魂sdk客户端:4.返回登录用户信息和token
+星魂sdk客户端->游戏客户端:5.返回登录用户信息和token
+游戏客户端->用户:6.登录成功
+note over 游戏客户端:游戏在进入游戏服务器前执行登录验证逻辑
+游戏客户端->游戏服务端:7.获取星魂sdk返回的uid和token请求游戏服务端
+游戏服务端->星魂服务端:8.星魂服务端获取的uid和token到星魂服务端验证
+星魂服务端->游戏服务端:9.返回验证成功或者失败
+游戏服务端->游戏客户端:10.验证成功进入服务器，验证失败返回重新登录</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script><textarea id="sequence-1-code" style="display: none">用户->游戏客户端:1.选择产品充值
+游戏客户端->游戏服务端:2.生成游戏订单
+游戏服务端->游戏客户端:3.返回游戏订单信息
+游戏客户端->星魂sdk客户端:4.调用支付接口
+星魂sdk客户端->星魂服务端:5.生成平台订单
+星魂服务端->星魂sdk客户端:6.返回平台订单信息
+星魂sdk客户端->渠道sdk:7.渠道支付
+渠道sdk->星魂服务端:8.支付完成回调
+星魂服务端->游戏服务端:9.支付完成回调
+游戏服务端->游戏客户端:10.支付完成发货
+渠道sdk-->星魂sdk客户端:11.通知客户端支付完成
+星魂sdk客户端-->游戏客户端:12.通知客户端支付完成
+note over 游戏客户端:游戏发货完成提示用户支付成功</textarea><textarea id="sequence-1-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-1-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-1-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-1", options);</script></p>
+
           
-          <!--/noindex-->
         
       
     </div>
@@ -1446,7 +1464,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-26 11:58:07" itemprop="dateModified" datetime="2018-12-26T11:58:07+08:00">2018-12-26</time>
+                <time title="Modified: 2019-02-28 17:37:02" itemprop="dateModified" datetime="2019-02-28T17:37:02+08:00">2019-02-28</time>
               
             
           </span>
@@ -1640,6 +1658,15 @@
   <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.6.0</div>
 
 
+
+
+
+  <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize("");
+    }
+  </script>
 
 
         

@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="supo">
 <meta property="og:description" content="描述">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-26T03:58:07.888Z">
+<meta property="og:updated_time" content="2019-02-28T09:37:02.263Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo的Next主题详细配置">
 <meta name="twitter:description" content="描述">
@@ -360,7 +360,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-26 11:58:07" itemprop="dateModified" datetime="2018-12-26T11:58:07+08:00">2018-12-26</time>
+                <time title="Modified: 2019-02-28 17:37:02" itemprop="dateModified" datetime="2019-02-28T17:37:02+08:00">2019-02-28</time>
               
             
           </span>
@@ -443,6 +443,32 @@
 <p>目前国内比较有名的多说、网易云跟帖评论系统都已停止服务了，国外的Disqus评论系统还得需要翻墙，所以不推荐使用，剩下的还有搜狐畅言、友言、来必力等。<br>本来想使用畅言的，结果注册完之后还得要求备案，我只想说F开头的那个单词，果断放弃。<br>后来选择了友言</p>
 </blockquote>
 <p>1、进入友言官网注册、登录步骤我就不介绍了<br>2、登录完成之后，点击获取代码，你会发现出来了一段代码，里面有你的<code>uid=1234567</code><br>3、打开 <strong><em>主题配置文件</em></strong> 找到<code>youyan_uid</code>将值设置为上面的uid就可以了</p>
+<h1 id="17、添加支持浏览流程图"><a href="#17、添加支持浏览流程图" class="headerlink" title="17、添加支持浏览流程图"></a>17、添加支持浏览流程图</h1><p>插件地址<br><a href="https://github.com/bubkoo/hexo-filter-flowchart" target="_blank" rel="noopener">https://github.com/bubkoo/hexo-filter-flowchart</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-filter-flowchart</span><br></pre></td></tr></table></figure>
+<p>示例流程图</p>
+<div id="flowchart-0" class="flow-chart"></div>
+
+<h1 id="18、添加支持浏览其他图标"><a href="#18、添加支持浏览其他图标" class="headerlink" title="18、添加支持浏览其他图标"></a>18、添加支持浏览其他图标</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-filter-mermaid-diagrams</span><br><span class="line">npm install --save hexo-filter-sequence</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<div id="sequence-0"></div>
+
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script></p>
 
       
     </div>
@@ -592,7 +618,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、基本信息配置"><span class="nav-number">1.</span> <span class="nav-text">1、基本信息配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、菜单设置"><span class="nav-number">2.</span> <span class="nav-text">2、菜单设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3、Next主题样式设置"><span class="nav-number">3.</span> <span class="nav-text">3、Next主题样式设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4、侧栏设置"><span class="nav-number">4.</span> <span class="nav-text">4、侧栏设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5、头像设置"><span class="nav-number">5.</span> <span class="nav-text">5、头像设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6、设置RSS"><span class="nav-number">6.</span> <span class="nav-text">6、设置RSS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7、添加分类模块"><span class="nav-number">7.</span> <span class="nav-text">7、添加分类模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8、添加标签模块"><span class="nav-number">8.</span> <span class="nav-text">8、添加标签模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9、添加关于模块"><span class="nav-number">9.</span> <span class="nav-text">9、添加关于模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10、添加搜索功能"><span class="nav-number">10.</span> <span class="nav-text">10、添加搜索功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11、添加阅读全文按钮"><span class="nav-number">11.</span> <span class="nav-text">11、添加阅读全文按钮</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12、修改文章内链接文本样式"><span class="nav-number">12.</span> <span class="nav-text">12、修改文章内链接文本样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13、设置网站缩略图标"><span class="nav-number">13.</span> <span class="nav-text">13、设置网站缩略图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14、设置文章字体的颜色、大小"><span class="nav-number">14.</span> <span class="nav-text">14、设置文章字体的颜色、大小</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#15、设置文字居中"><span class="nav-number">15.</span> <span class="nav-text">15、设置文字居中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#16、添加评论系统"><span class="nav-number">16.</span> <span class="nav-text">16、添加评论系统</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、基本信息配置"><span class="nav-number">1.</span> <span class="nav-text">1、基本信息配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、菜单设置"><span class="nav-number">2.</span> <span class="nav-text">2、菜单设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3、Next主题样式设置"><span class="nav-number">3.</span> <span class="nav-text">3、Next主题样式设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4、侧栏设置"><span class="nav-number">4.</span> <span class="nav-text">4、侧栏设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5、头像设置"><span class="nav-number">5.</span> <span class="nav-text">5、头像设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6、设置RSS"><span class="nav-number">6.</span> <span class="nav-text">6、设置RSS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7、添加分类模块"><span class="nav-number">7.</span> <span class="nav-text">7、添加分类模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8、添加标签模块"><span class="nav-number">8.</span> <span class="nav-text">8、添加标签模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9、添加关于模块"><span class="nav-number">9.</span> <span class="nav-text">9、添加关于模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10、添加搜索功能"><span class="nav-number">10.</span> <span class="nav-text">10、添加搜索功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11、添加阅读全文按钮"><span class="nav-number">11.</span> <span class="nav-text">11、添加阅读全文按钮</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12、修改文章内链接文本样式"><span class="nav-number">12.</span> <span class="nav-text">12、修改文章内链接文本样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13、设置网站缩略图标"><span class="nav-number">13.</span> <span class="nav-text">13、设置网站缩略图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14、设置文章字体的颜色、大小"><span class="nav-number">14.</span> <span class="nav-text">14、设置文章字体的颜色、大小</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#15、设置文字居中"><span class="nav-number">15.</span> <span class="nav-text">15、设置文字居中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#16、添加评论系统"><span class="nav-number">16.</span> <span class="nav-text">16、添加评论系统</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#17、添加支持浏览流程图"><span class="nav-number">17.</span> <span class="nav-text">17、添加支持浏览流程图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18、添加支持浏览其他图标"><span class="nav-number">18.</span> <span class="nav-text">18、添加支持浏览其他图标</span></a></li></ol></div>
             
 
           </div>
@@ -635,6 +661,15 @@
   <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.6.0</div>
 
 
+
+
+
+  <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize("");
+    }
+  </script>
 
 
         
